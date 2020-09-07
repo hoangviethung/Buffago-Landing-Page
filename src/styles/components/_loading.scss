@@ -1,0 +1,68 @@
+#loading-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	transition: all 0.5s ease-in-out;
+	background-color: #ffffff;
+
+	.loading-wrapper {
+		position: absolute;
+		padding-bottom: 75px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		max-width: 450px;
+		padding: 0 20px;
+	}
+
+	.progress {
+		height: 15px;
+		background-color: #e9ecef;
+		box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 3px black;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	.progress-status {
+		margin-top: 15px;
+		text-align: center;
+		font-size: 16px;
+		letter-spacing: 3px;
+		font-weight: 600;
+	}
+
+	#progress-bar {
+		max-width: 100%;
+		width: 0%;
+		height: 100%;
+		background-color: #ff9e0c;
+		background-image: linear-gradient(
+			45deg,
+			rgba(255, 255, 255, 0.3) 25%,
+			transparent 25%,
+			transparent 50%,
+			rgba(255, 255, 255, 0.3) 50%,
+			rgba(255, 255, 255, 0.3) 75%,
+			transparent 75%,
+			transparent
+		);
+		background-size: 1rem 1rem;
+		background-repeat: repeat;
+		animation: background 10s linear infinite forwards;
+	}
+
+	#loading-logo {
+		text-align: center;
+		padding: 20px 0;
+
+		img,
+		svg {
+			max-width: 200px;
+			width: 100%;
+		}
+	}
+}

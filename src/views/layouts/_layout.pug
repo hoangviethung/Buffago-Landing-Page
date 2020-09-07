@@ -1,0 +1,30 @@
+block var
+
+doctype html
+
+html(lang="en")
+	head
+		title #{title}
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="icon" href="/assets/favicons/favicon.ico" type="image/gif" sizes="16x16")
+		link(href="./css/core.min.css" rel="stylesheet")
+	body
+		block loading
+		//- main content
+		block header
+			include _header.pug
+		block banner,breadcrumb
+		main
+			block main
+			#js-page-verify(class=bodyClass hidden)
+		block footer
+			include _footer.pug
+		.backdrop
+		//- end main content
+		//- #go-top
+		//- 	img.svg(src="./assets/icons/gotop.svg")
+		//- include scripts
+		block scripts
+		script(src="./js/core.min.js" type="text/javascript" defer)

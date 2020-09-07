@@ -1,0 +1,9 @@
+{
+	"js": [],
+	"css": [
+		"vendors/fonts.css",
+		"vendors/bootstrap/bootstrap-reboot.css",
+		"vendors/bootstrap/bootstrap-grid.css",
+		"node_modules/swiper/css/swiper.min.css"
+	]
+}
